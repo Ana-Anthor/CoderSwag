@@ -1,4 +1,7 @@
 package com.Model
 
-class Category(val tilte: String, val image: String) {
+class Category(val title: String, val image: String) {
+    override fun toString(): String {
+        return title
+    }
 }

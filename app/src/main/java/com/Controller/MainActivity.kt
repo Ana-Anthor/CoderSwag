@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.RecyclerView
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import com.Adapters.CategoryAdapter
 import com.Model.Category
 import com.Services.DataService
@@ -21,6 +22,9 @@ class MainActivity : AppCompatActivity() {
         adapter = CategoryAdapter(this, DataService.categories)
 
         list_view.adapter = adapter
+
+
+
 
     }
 }

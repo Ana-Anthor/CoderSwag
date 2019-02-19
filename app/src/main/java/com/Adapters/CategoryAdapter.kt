@@ -12,7 +12,7 @@ import com.Model.Category
 import com.example.coderswag.R
 
 
-
+//denne bruker listView adapter - lager en ny til recyclerviewadapter
 class CategoryAdapter(context: Context, categories: List<Category>) : BaseAdapter(){ //exends the class "Base>Adapter"
     val context = context
     val categories = categories

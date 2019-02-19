@@ -16,7 +16,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="16dp" android:layout_marginTop="16dp" android:id="@+id/textView"/>
 
-    <ListView
+    <android.support.v7.widget.RecyclerView
             android:id="@+id/list_view"
             android:layout_width="match_parent"
             android:layout_height="0dp"

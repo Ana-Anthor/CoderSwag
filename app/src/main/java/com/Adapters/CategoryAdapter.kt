@@ -13,9 +13,7 @@ import com.example.coderswag.R
 
 
 //denne bruker listView adapter - lager en ny til recyclerviewadapter
-class CategoryAdapter(context: Context, categories: List<Category>) : BaseAdapter(){ //exends the class "Base>Adapter"
-    val context = context
-    val categories = categories
+class CategoryAdapter(val context: Context, val categories: List<Category>) : BaseAdapter(){ //exends the class "Base>Adapter"
 
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
@@ -27,13 +25,11 @@ class CategoryAdapter(context: Context, categories: List<Category>) : BaseAdapte
             holder = ViewHolder()
             holder.categoryImgae = categoryView.findViewById(R.id.categoryImage)
             holder.categoryName = categoryView.findViewById(R.id.categoryName)
-            println("I exist for the first time! ")
             categoryView.tag = holder
         } else { //if we allredy have created the number of views we are desplaing on the screen at any given time
             //we are goint to reuse that cell
             holder = convertView.tag as ViewHolder
             categoryView = convertView
-            println("Go green, recycle!")
         }
 
         val category = categories[position]
